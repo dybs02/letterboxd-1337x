@@ -2,7 +2,7 @@
   "manifest_version": 3,
   "name": "Letterboxd - 1337x",
   "description": "Add torrent link for the movie on imdb page",
-  "version": "1.0",
+  "version": "1.4",
   "action": {
     "default_popup": "popup/popup.html",
     "default_icon": "images/icon.png"
