@@ -1,0 +1,23 @@
+{
+  "manifest_version": 3,
+  "name": "Letterboxd - 1337x",
+  "description": "Add torrent link for the movie on imdb page",
+  "version": "1.0",
+  "action": {
+    "default_popup": "popup/popup.html",
+    "default_icon": "images/icon.png"
+  },
+  "content_scripts": [
+    {
+      "js": ["scripts/content.js"],
+      "matches": [
+        "https://letterboxd.com/*"
+      ]
+    }
+  ],
+  "browser_specific_settings": {
+    "gecko": {
+      "id": "23r23qfgdgsdfgsdd2rrme@godihate.ff"
+    }
+  }
+}
