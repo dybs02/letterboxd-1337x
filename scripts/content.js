@@ -1,11 +1,11 @@
-const textFooter = document.querySelector('.text-link.text-footer');
-const lastLink = textFooter.querySelectorAll('a')[1];
+const lastLink = Array.from(document.querySelectorAll('a'))
+  .find(a => a.textContent.trim() === 'TMDB');
 
-const filmTitleElement = document.querySelector('.headline-1.filmtitle .name');
-const title = filmTitleElement ? filmTitleElement.textContent.trim() : null;
+const filmTitleElement = document.querySelector('h1.primaryname');
+const title = filmTitleElement ? filmTitleElement.textContent.trim() : 'null';
 
 const yearElement = document.querySelector('.releaseyear a');
-const year = yearElement ? yearElement.textContent.trim() : null;
+const year = yearElement ? yearElement.textContent.trim() : 'null';
 
 
 if (lastLink && title && year) {
